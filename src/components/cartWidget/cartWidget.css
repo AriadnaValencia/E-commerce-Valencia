@@ -1,0 +1,16 @@
+.cart{
+    width: 2rem;
+}
+
+.badge{
+    font-size: 0.8rem;
+    background-color: black;
+    padding:0.3em;
+    color: yellow;
+    border-radius: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
