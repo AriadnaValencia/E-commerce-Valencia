@@ -1,5 +1,5 @@
 .cart{
-    width: 2rem;
+    width: 3rem;
 }
 
 .badge{
@@ -13,4 +13,5 @@
 .container{
     display: flex;
     align-items: center;
+    padding: 1.5em;
 }
