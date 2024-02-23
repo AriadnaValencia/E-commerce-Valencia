@@ -1,6 +1,7 @@
 import './cartWidget.css'
+
 const CartWidget = () => {
-    return(
+    return (
         <div className='container'>
         <img className='cart' src='./images/carrito.png' alt='carrito'/>
         <span className='badge'>4</span>
