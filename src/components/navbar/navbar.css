@@ -1,39 +1,18 @@
+@font-face {
+    font-family: 'HaarlemDeco';
+    src: url('../../../public/fonts/Haarlem\ Deco\ DEMO.otf') format('truetype');
+}
+
 .navContainer{
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    text-align: center;
     background-image: url(../../../public/images/nubes.jpg);
     font-family: 'HaarlemDeco', sans-serif;
 }
 
-.link{
-    font-size: 1.5em;
-}
-
-.linksContainer{
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-    align-items: center;
-}
-
-.cartWidget{
-    width:4rem;
-}
-
-.link{
-    color:black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .logo{
     width: 6rem;
-    padding-left: 2em;
-}
-
-@font-face {
-    font-family: 'HaarlemDeco';
-    src: url('../../../public/fonts/Haarlem\ Deco\ DEMO.otf') format('truetype');
 }

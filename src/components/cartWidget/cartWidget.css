@@ -1,17 +1,15 @@
 .cart{
-    width: 3rem;
+    width: 2.5rem;
 }
 
 .badge{
-    font-size: 0.8rem;
     background-color: black;
-    padding:0.3em;
+    padding: .5em;
     color: yellow;
     border-radius: 20px;
 }
 
-.container{
-    display: flex;
+.container {
+    display:flex;
     align-items: center;
-    padding: 1.5em;
 }

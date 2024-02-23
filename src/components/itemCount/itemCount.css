@@ -1,0 +1,14 @@
+.botones{
+    display: flex;
+    justify-content: center;
+    font-family: 'GlacialIndifference-Regular', sans-serif;
+}
+
+.btn-carrito{
+    font-family: 'GlacialIndifference-Regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'GlacialIndifference-Regular';
+    src: url('../../../public/fonts/GlacialIndifference-Regular.otf') format('truetype');
+}
