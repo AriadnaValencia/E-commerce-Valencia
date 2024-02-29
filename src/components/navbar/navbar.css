@@ -6,11 +6,7 @@
 .navContainer{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    text-align: center;
     background-image: url(../../../public/images/nubes.jpg);
-    font-family: 'HaarlemDeco', sans-serif;
 }
 
 .logo{

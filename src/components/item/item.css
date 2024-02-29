@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'GlacialIndifference-Regular';
+    src: url('../../../public/fonts/GlacialIndifference-Regular.otf') format('truetype');
+}
+
+.card {
+    width: 18rem;
+    font-family: 'GlacialIndifference-Regular', sans-serif;
+    background-color: rgba(255, 255, 0, 0.522);
+}
+
+.card-title{
+    font-family: 'HaarlemDeco', sans-serif;
+}

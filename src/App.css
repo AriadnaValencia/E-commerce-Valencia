@@ -1,17 +1,11 @@
-.navContainer{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  background-image: url(../public/images/nubes.jpg);
-  font-family: 'HaarlemDeco', sans-serif;
-}
-
 .linksContainer{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  text-align: center;
+  width: 50%;
   align-items: center;
+  padding-left: 12em;
+  font-family: 'HaarlemDeco', sans-serif;
 }
 
 .link{
