@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'GlacialIndifference-Bold';
+    font-family: 'GlacialIndifference-Regular';
+    src: url('../../../public/fonts/GlacialIndifference-Bold.otf') format('truetype');
+    src: url('../../../public/fonts/GlacialIndifference-Regular.otf') format('truetype');
+}
+
+.detalle{
+    font-family: 'GlacialIndifference-Bold', sans-serif;
+}
+
+.detalle img{
+    width: 18rem;
+}
+
+.descriptionDetalle{
+    font-family: 'GlacialIndifference-Regular', sans-serif;
+}

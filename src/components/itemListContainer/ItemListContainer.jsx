@@ -1,53 +1,37 @@
 import React from 'react'
 import './itemListContainer.css'
-import {useState, useEffect } from 'react'
-import ItemCount from '../itemCount/ItemCount'
-import {getProducts} from '../../mock/fakeApi'
+import { useState, useEffect } from 'react'
+import { getProducts } from '../../mock/fakeApi'
 import ItemList from '../itemList/ItemList'
+import { useParams } from 'react-router-dom'
 
 
-function ItemListContainer ({greeting}) {
-const [productos, setProductos]=useState([])
+function ItemListContainer({ greeting }) {
+    const [productos, setProductos] = useState([])
+    const { categoryId } = useParams()
+    console.log(categoryId)
 
-//ejemplo de promesa
-//const productos =[
-//    {id: "1", name:'product1', stock:4},
-//    {id: "2", name:'product2', stock:8},
-//    {id: "3", name:'product3', stock:14},
-//]
-//
-//const getProducts = () => {
-//    let error = false
-//    return new Promise ((resolve, reject)=>{
-//        setTimeout(()=>{
-//            if(error){
-//                reject('No hay')
-//            }
-//            else{
-//                resolve(productos)
-//            }
-//        },2000)
-//    })
-//}
-//
-//console.log(getProducts())
-//getProducts().then((res)=> console.log(res)).catch((error)=> console.log(error))
+    useEffect(() => {
+        getProducts()
+            .then((res) => {
+                if (categoryId) {
+                    setProductos(res.filter((prod) => prod.category === categoryId))
+                } else {
+                    setProductos(res)
+                }
+            })
 
-useEffect(()=>{
-    getProducts()
-    .then((respuesta)=> setProductos(respuesta))
-    .catch((error)=> console.log(error, 'mal'))
-},[])
-console.log(productos)
+            .catch((error) => console.log(error, 'mal'))
+    }, [categoryId])
 
     return (
         <div className='cartel'>
-            <h1>{greeting}</h1>
             {
-               /* productos.map((producto)=> <p key={producto.id}>{producto.stock}</p>)
-            */}
-            <ItemList productos={productos}/>
-            <ItemCount stock={8}/>
+                categoryId
+                    ? <h1> {greeting} <span>{categoryId}</span></h1>
+                    : <h1>{greeting}</h1>
+            }
+            <ItemList productos={productos} />
         </div>
     )
 }

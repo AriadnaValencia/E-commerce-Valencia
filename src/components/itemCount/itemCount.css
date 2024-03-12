@@ -6,6 +6,8 @@
 
 .btn-carrito{
     font-family: 'GlacialIndifference-Regular', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 @font-face {

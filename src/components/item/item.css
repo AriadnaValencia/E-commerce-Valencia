@@ -3,9 +3,11 @@
     src: url('../../../public/fonts/GlacialIndifference-Regular.otf') format('truetype');
 }
 
-.card {
+.cardItem {
     width: 18rem;
     font-family: 'GlacialIndifference-Regular', sans-serif;
+    padding: .5em;
+    border: 1px solid black;
     background-color: rgba(255, 255, 0, 0.522);
 }
 
